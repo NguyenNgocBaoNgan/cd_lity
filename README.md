@@ -6,11 +6,14 @@ Examples:
  3. Given S= 'aaa', the function should return true. Note that 'b' does not need to occur in S
  4. Given S = 'b', the function should return true. Note that 'a' does not need to occur in S
  5. Given S = 'abba', the function should return false.
+    
 /////////////////////////////
 
 ex2: You are given an undirected graph consisting of N vertices, numbered from 1 to N, and M edges.The graph is described by two arrays, A and B, both of length M. A pair (A[K], B[K]), for K from 0 to M-1, describes an edge between vertex A[K] and vertex B[K]. Your task is to check whether the given graph contains a path from vertex 1 to vertex N going through all of the vertices, one by one, in increasing order of their numbers. All connections on the path should be direct. Write a function: class Solution { public boolean solution (int N, int[] A, int[] B); } that, given an integer N and two arrays A and B of M integers each, returns true if there exists a path from vertex 1 to N going through all vertices, one by one, in increasing order, or false otherwise. Examples:	1. Given N 4, A[1, 2, 4, 4, 3] and B = [2, 3, 1, 3, 11, the function should return true. There is a path (1-2-3-4) using edges (1, 2), (2, 3) and (4,3).
 Note: những thuật toán tìm max, min => có thể dùng greedy algo có hàm array.uitls, và Collections. reverse
+
 /////////////////////////////
+
 ex3: You have just rolled a dice several times. The N roll results that you remember are described by an array A. However, there are F rolls whose results you have forgotten. The arithmetic mean of all of the roll results (the sum of all the roll results divided by the number of rolls) equals M.
 What are the possible results of the missing rolls?
 Write a function:
@@ -22,7 +25,9 @@ Examples:
 2. Given A = [1, 5, 6], F = 4, M = 3, your function may return [2, 1, 2, 4] or [6, 1, 1, 1] (among others).
 3. Given A = [1, 2, 3, 4], F = 4, M = 6, your function should return [0]. It is not possible to obtain such a mean.
 4. Given A = [6, 1], F = 1, M = 1, your function should return [0]. It is not possible to obtain such a mean.
+
 /////////////////////////////
+
 ex4:An array A consisting of N integers is given. Our goal is to obtain an array in which every value occurs a unique number of times. We only consider integers that appear at least once in the resulting array. To achieve the goal, we can delete some integers from A. What is the minimum number of integers at must be deleted from A so that every remaining value occurs a unique number of times?
 Write a function:
 function solution(A);
@@ -34,12 +39,16 @@ that, given an array A consisting of N integers, returns the minimum number of i
 Write an efficient algorithm for the following assumptions:
 N is an integer within the range (1..200,000);
 each element of array A is an integer within the range [0..1,000,000,000).
+
 /////////////////////////////
+
 ex5:You are given a list of N transfers (numbered from 0 to N-1) between two banks: bank A and bank B. The K-th A transfer is described by two values: R[K] (either "A" or "B") representing the recipient (the bank the transfer is sent to); V[K] denoting the value sent via the transfer.
 All transfers are completed in the order they appear on the list. The banks do not want to go into debt (in other words, their account balance may not drop below 0). What minimum initial account balance in each bank is necessary in order to complete the transfers?
 Write a function: class Solution { public int[] solution(String R, int[] V); }
 that, given a string R and an array of integers V, both of length N, returns an array of two integers. The integers should represent the minimum initial account balances for banks A and B in the following order: [bank A, bank B). Result array should be returned as an array of integers.
+
 /////////////////////////////
+
 ex6:There are N players standing in a row, one player on a field. They are numbered from 0 to N-1 from left to right. Players perform moves one by one from left to right, that is, in ascending order of numbers. Each player presses an arrow key in one of the four cardinal directions: left ('<'), right ('>'), up ('^') or down ('v'). A key press in the given direction means that the player attempts to move onto the closest field in the direction specified. A move can be performed only if there is no other player already standing on the target field. Moves are represented as a string S of length N, where S[K] (for K within the range 0..N-1) is the direction of the K-th player's move. How many players will actually perform a move successfully? Write a function: class Solution { public int solution(String S); }
 which, given a string S of length N representing arrow keys pressed by each of the players, returns the number of players that will perform a move successfully.
 /////////////////////////////
